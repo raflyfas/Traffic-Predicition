@@ -11,7 +11,10 @@ st.write('Aplikasi ini memprediksi status lalu lintas (macet/lancar) berdasarkan
 @st.cache_resource
 def train_model():
     # 1. Memuat Data
-    df = pd.read_csv("C:/Users/PC/Downloads/zurich.csv")
+    # URL download langsung untuk file zurich.csv di Google Drive
+    file_id = "1-2k7lIvII8-RA6W3UE5XCLR7265usNAs"
+    url = f'https://drive.google.com/uc?export=download&id={file_id}'
+    df = pd.read_csv(url)
 
     # 2. Pembersihan Data Awal
     df = df.drop(columns=['speed'], errors='ignore')
