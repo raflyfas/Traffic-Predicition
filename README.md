@@ -42,12 +42,13 @@ Pendekatan ini dipilih agar:
 
 ## 📂 Struktur Proyek
 TUBES_DS/
-├── app.py # File utama aplikasi Streamlit
-├── model.pkl # Model machine learning hasil training
-├── requirements.txt # Daftar dependensi Python
-├── Zurich_DSA.ipynb # Notebook eksplorasi dan training data
-├── zurich.py # Script training model (offline)
-└── README.md
+├── app.py               # File utama aplikasi Streamlit (inference & UI)
+├── model.pkl            # Model machine learning hasil training (Random Forest)
+├── requirements.txt     # Daftar dependensi Python
+├── Zurich_DSA.ipynb     # Notebook eksplorasi data & training model
+├── zurich.py            # Script training model (offline)
+└── README.md            # Dokumentasi proyek
+
 
 
 ## Cara Menjalankan
