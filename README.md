@@ -40,17 +40,6 @@ Pendekatan ini dipilih agar:
 
 ---
 
-## 📂 Struktur Proyek
-
-```text
-TUBES_DS/
-├── app.py               # File utama aplikasi Streamlit (inference & UI)
-├── model.pkl            # Model machine learning hasil training (Random Forest)
-├── requirements.txt     # Daftar dependensi Python
-├── Zurich_DSA.ipynb     # Notebook eksplorasi data & training model
-├── zurich.py            # Script training model (offline)
-└── README.md            # Dokumentasi proyek
-
 ## Cara Menjalankan
 
 1.  **Clone Repositori**
@@ -73,3 +62,14 @@ TUBES_DS/
 
 4.  **Buka di Browser**
     Aplikasi akan terbuka di browser, biasanya di url `http://localhost:8501`.
+
+## Struktur File
+
+```text
+TUBES_DS/
+├── app.py               # File utama aplikasi Streamlit (inference & UI)
+├── model.pkl            # Model machine learning hasil training (Random Forest)
+├── requirements.txt     # Daftar dependensi Python
+├── Zurich_DSA.ipynb     # Notebook eksplorasi data & training model
+├── zurich.py            # Script training model (offline)
+└── README.md            # Dokumentasi proyek
