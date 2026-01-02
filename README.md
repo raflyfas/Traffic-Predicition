@@ -41,6 +41,8 @@ Pendekatan ini dipilih agar:
 ---
 
 ## 📂 Struktur Proyek
+
+```text
 TUBES_DS/
 ├── app.py               # File utama aplikasi Streamlit (inference & UI)
 ├── model.pkl            # Model machine learning hasil training (Random Forest)
@@ -48,8 +50,6 @@ TUBES_DS/
 ├── Zurich_DSA.ipynb     # Notebook eksplorasi data & training model
 ├── zurich.py            # Script training model (offline)
 └── README.md            # Dokumentasi proyek
-
-
 
 ## Cara Menjalankan
 
