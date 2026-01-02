@@ -1,7 +1,8 @@
-import streamlit as st
 import pandas as pd
 import numpy as np
+import os
 import joblib
+import streamlit as st
 
 # Judul Aplikasi
 st.title('Prediksi Kemacetan Lalu Lintas Zurich')
@@ -10,7 +11,10 @@ st.write('Aplikasi ini memprediksi status lalu lintas (macet/lancar) berdasarkan
 # ===== LOAD MODEL SAJA (TANPA CSV) =====
 @st.cache_resource
 def load_model():
-    return joblib.load("model.pkl")
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    model_path = os.path.join(base_dir, "model.pkl")
+    return joblib.load(model_path)
+
 
 model, lower_bound, upper_bound = load_model()
 
@@ -73,3 +77,4 @@ if st.button('Prediksi Status Lalu Lintas'):
             </div>""",
             unsafe_allow_html=True
         )
+
